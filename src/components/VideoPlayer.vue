@@ -51,7 +51,7 @@ export default {
             // src: "http://127.0.0.1:8889/static/ts-1m/index.m3u8",
             // src: "http://127.0.0.1:8889/static/ts-h264-2/index.m3u8",
             // src: "http://127.0.0.1:8889/static/ts-h264-2/index-p1.m3u8",
-            src: "./static/video/video2/index-p1.m3u8",
+            src: "./static/video/video1/index.m3u8",
           },
           // {
           //   // withCredentials: false,
