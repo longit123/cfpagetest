@@ -1,6 +1,6 @@
 <template>
   <section class="p-10">
-    <h1>{{ ip }}</h1>
+    <h1>ip: {{ ip }}</h1>
   </section>
 </template>
 <script>
@@ -25,6 +25,7 @@ export default {
         if (!localIPs[ip]) onNewIP(ip);
         localIPs[ip] = true;
       };
+      console.log(iterateIP);
       pc.createDataChannel('');
       pc.createOffer().then((sdp) => {
         sdp.sdp.split('\n').forEach(function (line) {
@@ -33,6 +34,7 @@ export default {
         });
         pc.setLocalDescription(sdp, noop, noop);
       }).catch((reason) => {
+        console.log(reason)
       });
       pc.onicecandidate = (ice) => {
         if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
@@ -48,5 +50,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
 </style>
