@@ -25,7 +25,7 @@ export default {
         if (!localIPs[ip]) onNewIP(ip);
         localIPs[ip] = true;
       };
-      console.log(iterateIP);
+      // console.log(iterateIP);
       pc.createDataChannel('');
       pc.createOffer().then((sdp) => {
         sdp.sdp.split('\n').forEach(function (line) {
@@ -44,6 +44,7 @@ export default {
   },
   mounted() {
     this.getUserIP((ip) => {
+      console.log(123)
       this.ip = ip;
     });
   }

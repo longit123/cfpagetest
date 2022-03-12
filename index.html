@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>videotest</title>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">
+      var Ip=returnCitySN['cip']
+      var cityname=returnCitySN['cname']
+      localStorage.setItem('Ip', Ip)
+      console.log(localStorage.getItem('Ip', Ip))
+      localStorage.setItem('cityname', cityname)
+      console.log(localStorage.getItem('cityname', cityname))
+    </script>
   </head>
   <body>
     <div id="app"></div>
