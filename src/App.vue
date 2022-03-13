@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>pet adoption </h1>
+    <h1>pet adoption & pet supplies </h1>
+    <p><b>Contact</b>: Mr.Chavez 4961 Woodbridge Lane Southfield ksq6l911d9dc#thrubay.com</p>
+    <p><b>Contact Us, We will show you more pictures</b></p>
 <!--    <img src="./assets/logo.png">-->
     <Album/>
 <!--    <VideoPlayer/>-->
