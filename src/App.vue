@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <ShowIp/>
-    <VideoPlayer/>
+    <h1>pet adoption </h1>
+<!--    <img src="./assets/logo.png">-->
+    <Album/>
+<!--    <VideoPlayer/>-->
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import VideoPlayer from './components/VideoPlayer'
-import ShowIp from "./components/ShowIp";
+// import VideoPlayer from './components/VideoPlayer'
+// import ShowIp from "./components/ShowIp";
+import Album from "./components/Album";
 
 export default {
   name: 'App',
   components: {
-    ShowIp,
-    // HelloWorld
-    VideoPlayer
+    Album,
+    // ShowIp,
+    // HelloWorld,
+    // VideoPlayer
   }
 }
 </script>
